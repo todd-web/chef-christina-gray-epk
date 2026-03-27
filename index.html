@@ -1,0 +1,2279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chef Christina Gray | Electronic Press Kit</title>
+<meta name="description" content="Chef Christina Gray - Culinary Artist, Brand Partner, Cultural Force. Private chef to celebrities, Executive Event Chef for Chicago Fire FC, founder of Razzle Dazzle and What's On The Menu Catering.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+<style>
+/* ============================== */
+/* RESET & BASE                   */
+/* ============================== */
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+body { font-family: var(--font-body); color: var(--text-primary); background: var(--rich-black); overflow-x: hidden; }
+img { max-width: 100%; display: block; }
+a { text-decoration: none; color: inherit; }
+ul { list-style: none; }
+button { border: none; cursor: pointer; background: none; font-family: inherit; }
+
+/* ============================== */
+/* CUSTOM PROPERTIES              */
+/* ============================== */
+:root {
+  --royal-blue: #1B3A8C;
+  --sapphire: #2B4FAF;
+  --midnight: #0F2461;
+  --orange: #D4621B;
+  --orange-warm: #E8872E;
+  --orange-glow: rgba(212, 98, 27, 0.25);
+  --rich-black: #0A0A0F;
+  --charcoal: #111118;
+  --card-bg: #141428;
+  --card-border: rgba(27, 58, 140, 0.2);
+  --text-primary: #F5F5F7;
+  --text-secondary: #9A9AB0;
+  --text-muted: #8A8AA0;
+  --cream: #FAF8F5;
+  --light-text: #1A1A2E;
+  --light-text-secondary: #4A4A5E;
+  --light-border: #E8E4DE;
+  --gold: #C9A84C;
+  --success: #2ECC71;
+
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-editorial: 'Cormorant Garamond', Georgia, serif;
+  --font-body: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-accent: 'Bebas Neue', Impact, sans-serif;
+
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+  --space-2xl: 48px;
+  --space-3xl: 64px;
+  --space-4xl: 80px;
+  --space-5xl: 128px;
+
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 20px;
+  --radius-pill: 50px;
+
+  --shadow-card: 0 4px 24px rgba(0, 0, 0, 0.15);
+  --shadow-card-hover: 0 12px 40px rgba(0, 0, 0, 0.3);
+  --shadow-orange-glow: 0 8px 32px rgba(212, 98, 27, 0.4);
+  --shadow-blue-subtle: 0 8px 32px rgba(27, 58, 140, 0.12);
+
+  --ease-out-smooth: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  --ease-out-expo: cubic-bezier(0.23, 1, 0.32, 1);
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.35s var(--ease-out-smooth);
+  --transition-slow: 0.6s var(--ease-out-smooth);
+}
+
+/* ============================== */
+/* UTILITY                        */
+/* ============================== */
+.container { max-width: 1200px; margin: 0 auto; padding: 0 var(--space-lg); }
+.section-label {
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.75rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--orange);
+  margin-bottom: var(--space-md);
+}
+.section-label--light { color: var(--royal-blue); }
+.section-title {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(2rem, 5vw, 3rem);
+  line-height: 1.15;
+  letter-spacing: 0.01em;
+  color: var(--text-primary);
+  margin-bottom: var(--space-2xl);
+}
+.section-title--dark { color: var(--light-text); }
+
+/* ============================== */
+/* REVEAL ANIMATIONS              */
+/* ============================== */
+.reveal-up, .reveal-left, .reveal-right, .reveal-scale, .reveal-fade {
+  opacity: 0;
+  will-change: transform, opacity;
+}
+.reveal-up { transform: translateY(40px); }
+.reveal-left { transform: translateX(-40px); }
+.reveal-right { transform: translateX(40px); }
+.reveal-scale { transform: scale(0.95); }
+
+.reveal-up.active { opacity: 1; transform: translateY(0); transition: opacity 0.8s var(--ease-out-smooth), transform 0.8s var(--ease-out-smooth); }
+.reveal-left.active { opacity: 1; transform: translateX(0); transition: opacity 0.8s var(--ease-out-smooth), transform 0.8s var(--ease-out-smooth); }
+.reveal-right.active { opacity: 1; transform: translateX(0); transition: opacity 0.8s var(--ease-out-smooth), transform 0.8s var(--ease-out-smooth); }
+.reveal-scale.active { opacity: 1; transform: scale(1); transition: opacity 0.6s var(--ease-out-smooth), transform 0.6s var(--ease-out-smooth); }
+.reveal-fade.active { opacity: 1; transition: opacity 0.6s ease; }
+
+.stagger-1 { transition-delay: 0.05s !important; }
+.stagger-2 { transition-delay: 0.10s !important; }
+.stagger-3 { transition-delay: 0.15s !important; }
+.stagger-4 { transition-delay: 0.20s !important; }
+.stagger-5 { transition-delay: 0.25s !important; }
+.stagger-6 { transition-delay: 0.30s !important; }
+.stagger-7 { transition-delay: 0.35s !important; }
+.stagger-8 { transition-delay: 0.40s !important; }
+.stagger-9 { transition-delay: 0.45s !important; }
+.stagger-10 { transition-delay: 0.50s !important; }
+.stagger-11 { transition-delay: 0.55s !important; }
+.stagger-12 { transition-delay: 0.60s !important; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+  .reveal-up, .reveal-left, .reveal-right, .reveal-scale, .reveal-fade {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+  .hero__image, .hero__est, .hero__name span, .hero__divider,
+  .hero__tagline, .hero__scroll { opacity: 1 !important; transform: none !important; }
+  .marquee__track { animation: none !important; }
+  .gallery__track { animation: none !important; }
+}
+
+/* ============================== */
+/* NAVIGATION                     */
+/* ============================== */
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background: rgba(10, 10, 15, 0.92);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(27, 58, 140, 0.15);
+  z-index: 1000;
+  transform: translateY(-100%);
+  transition: transform 0.4s ease;
+  display: flex;
+  align-items: center;
+}
+.nav.visible { transform: translateY(0); }
+.nav__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--space-lg);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav__brand {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+.nav__logo-img {
+  height: 32px;
+  width: auto;
+  object-fit: contain;
+}
+.nav__brand-name {
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  color: var(--text-primary);
+  text-transform: uppercase;
+}
+.nav__links {
+  display: flex;
+  gap: var(--space-xl);
+  align-items: center;
+}
+.nav__link {
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  transition: color 0.3s ease;
+  position: relative;
+  padding-bottom: 6px;
+}
+.nav__link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--orange);
+  transition: width 0.3s ease;
+}
+.nav__link:hover, .nav__link.active { color: var(--text-primary); }
+.nav__link.active::after { width: 100%; }
+
+/* Hamburger */
+.nav__hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1002;
+}
+.nav__hamburger span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: var(--text-primary);
+  transition: all 0.3s ease;
+}
+.nav__hamburger.open span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+.nav__hamburger.open span:nth-child(2) { opacity: 0; }
+.nav__hamburger.open span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
+
+/* Mobile overlay */
+.nav__overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(10, 10, 15, 0.97);
+  z-index: 1001;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+  transform: translateX(100%);
+  transition: transform 0.4s var(--ease-out-expo);
+}
+.nav__overlay.open { transform: translateX(0); }
+.nav__overlay a {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: var(--text-primary);
+  letter-spacing: 0.04em;
+  transition: color 0.3s ease;
+}
+.nav__overlay a:hover { color: var(--orange); }
+
+@media (max-width: 1023px) {
+  .nav { height: 56px; }
+  .nav__links { display: none; }
+  .nav__hamburger { display: flex; }
+  .nav__brand-name { display: none; }
+}
+
+/* ============================== */
+/* SECTION 1: HERO                */
+/* ============================== */
+.hero {
+  position: relative;
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  overflow: hidden;
+  background: radial-gradient(ellipse at 35% 50%, #1B3A8C 0%, #0F2461 30%, #0A0A0F 70%);
+}
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+  opacity: 0.03;
+  mix-blend-mode: overlay;
+  pointer-events: none;
+  z-index: 1;
+}
+.hero__inner {
+  position: relative;
+  z-index: 2;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--space-lg);
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+.hero__image-wrap {
+  position: relative;
+  width: 45%;
+  flex-shrink: 0;
+  align-self: flex-end;
+  margin-bottom: -20px;
+}
+.hero__image-wrap::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 120%;
+  height: 120%;
+  background: radial-gradient(circle at center, rgba(27, 58, 140, 0.3) 0%, transparent 70%);
+  pointer-events: none;
+  z-index: -1;
+}
+.hero__image {
+  width: 100%;
+  height: auto;
+  max-height: 90vh;
+  object-fit: contain;
+  object-position: bottom;
+  opacity: 0;
+  transform: translateY(60px);
+  animation: heroImageIn 1.0s var(--ease-out-smooth) 0.3s forwards;
+}
+.hero__content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: var(--space-3xl) 0 var(--space-4xl) var(--space-3xl);
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+.hero__est {
+  font-family: var(--font-accent);
+  font-size: 1rem;
+  letter-spacing: 0.15em;
+  color: var(--gold);
+  margin-bottom: var(--space-md);
+  opacity: 0;
+  animation: fadeIn 0.6s ease 0.8s forwards;
+}
+.hero__name {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(2.5rem, 6vw, 5rem);
+  line-height: 1.0;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--text-primary);
+  margin-bottom: var(--space-md);
+}
+.hero__name span {
+  display: block;
+  opacity: 0;
+  transform: translateY(30px);
+}
+.hero__name span:nth-child(1) { animation: slideUp 0.6s var(--ease-out-smooth) 1.0s forwards; }
+.hero__name span:nth-child(2) { animation: slideUp 0.6s var(--ease-out-smooth) 1.15s forwards; }
+.hero__name span:nth-child(3) { animation: slideUp 0.6s var(--ease-out-smooth) 1.3s forwards; }
+
+.hero__divider {
+  width: 0;
+  height: 3px;
+  background: var(--orange);
+  margin-bottom: var(--space-md);
+  animation: growLine 0.5s ease 1.5s forwards;
+}
+.hero__tagline {
+  font-family: var(--font-editorial);
+  font-weight: 300;
+  font-size: clamp(1.125rem, 2vw, 1.5rem);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  opacity: 0;
+  animation: fadeIn 0.6s ease 1.7s forwards;
+}
+.hero__scroll {
+  position: absolute;
+  bottom: 32px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  animation: fadeIn 0.5s ease 2.5s forwards;
+  z-index: 10;
+}
+.hero__scroll svg {
+  width: 24px;
+  height: 24px;
+  color: var(--text-secondary);
+  opacity: 0.6;
+  animation: bounce 2s infinite;
+}
+
+@keyframes heroImageIn {
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
+@keyframes slideUp {
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes growLine {
+  to { width: 60px; }
+}
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(8px); }
+}
+
+/* Mobile-only line breaks in tagline */
+.hero__tagline .mobile-break { display: none; }
+
+/* Hero mobile - CHANGE #2: text first, image below on mobile */
+@media (max-width: 767px) {
+  .hero__inner {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 50px;
+  }
+  .hero__image-wrap {
+    width: 100vw;
+    max-width: 560px;
+    order: 2;
+    align-self: center;
+    margin-bottom: -30px;
+    margin-top: -64px;
+    flex-grow: 1;
+    display: flex;
+    align-items: flex-end;
+  }
+  .hero__image {
+    max-height: 90vh;
+    width: 100%;
+    object-fit: contain;
+    object-position: bottom;
+  }
+  .hero__content {
+    padding: 0;
+    min-height: auto;
+    align-items: center;
+    order: 1;
+    margin-bottom: -24px;
+  }
+  .hero__tagline {
+    margin-bottom: 0;
+    line-height: 1.3;
+  }
+  .hero__tagline .mobile-break { display: inline; }
+  .hero__divider { margin-left: auto; margin-right: auto; margin-bottom: var(--space-xs); }
+  .hero__name { margin-bottom: var(--space-sm); }
+  .hero {
+    flex-direction: column;
+  }
+  .hero__scroll {
+    display: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .hero__image-wrap { width: 38%; }
+  .hero__content { padding-left: var(--space-xl); }
+}
+
+/* ============================== */
+/* SCROLL PROMPT (top of Story)   */
+/* ============================== */
+.scroll-prompt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 0;
+  margin-top: -12px;
+  opacity: 0.5;
+  animation: scrollBounce 2s infinite;
+}
+.scroll-prompt__text {
+  font-family: var(--font-body);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+}
+.scroll-prompt svg {
+  width: 20px;
+  height: 20px;
+  color: var(--text-secondary);
+}
+@keyframes scrollBounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(6px); }
+}
+
+/* Also hide the old hero scroll on desktop */
+.hero__scroll { display: none; }
+
+/* ============================== */
+/* SECTION 2: THE STORY           */
+/* ============================== */
+.story { background: var(--charcoal); padding: var(--space-4xl) 0; }
+.story__grid {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  gap: var(--space-2xl);
+  align-items: start;
+}
+.story__text p {
+  font-family: var(--font-body);
+  font-weight: 300;
+  font-size: clamp(1rem, 1.5vw, 1.125rem);
+  line-height: 1.8;
+  color: var(--text-secondary);
+  margin-bottom: var(--space-lg);
+  max-width: 620px;
+}
+.story__expandable {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.6s var(--ease-out-smooth), opacity 0.4s ease;
+  opacity: 0;
+}
+.story__expandable.expanded {
+  max-height: 500px;
+  opacity: 1;
+}
+.story__toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.85rem;
+  color: var(--orange);
+  cursor: pointer;
+  padding: 8px 0;
+  transition: color 0.3s ease;
+  background: none;
+  border: none;
+}
+.story__toggle:hover { color: var(--orange-warm); }
+.story__toggle svg {
+  width: 16px;
+  height: 16px;
+  transition: transform 0.3s ease;
+}
+.story__toggle.expanded svg {
+  transform: rotate(180deg);
+}
+.story__pullquote {
+  background: rgba(27, 58, 140, 0.08);
+  border-left: 3px solid var(--orange);
+  padding: 2rem;
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  position: sticky;
+  top: 100px;
+}
+.story__pullquote blockquote {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 500;
+  font-size: clamp(1.25rem, 2vw, 1.5rem);
+  color: var(--text-primary);
+  line-height: 1.5;
+  margin-bottom: var(--space-md);
+}
+.story__pullquote cite {
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 0.8rem;
+  color: var(--orange);
+  font-style: normal;
+}
+.story__divider {
+  width: 60px;
+  height: 1px;
+  background: rgba(27, 58, 140, 0.3);
+  margin: var(--space-2xl) auto 0;
+}
+@media (max-width: 767px) {
+  .story { padding: var(--space-3xl) 0; }
+  .story__grid { grid-template-columns: 1fr; text-align: center; }
+  .story__text p { max-width: 100%; }
+  .story__pullquote { position: static; }
+  .story__toggle { margin: 0 auto; display: flex; }
+}
+
+/* ============================== */
+/* SECTION 3: CELEBRITY CLIENTELE */
+/* ============================== */
+.clientele { background: var(--rich-black); padding: var(--space-4xl) 0; }
+.clientele__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-2xl);
+}
+.clientele__category h3 {
+  font-family: var(--font-accent);
+  font-size: 1rem;
+  letter-spacing: 0.15em;
+  color: var(--orange);
+  margin-bottom: var(--space-lg);
+  text-transform: uppercase;
+}
+.clientele__name {
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: var(--text-primary);
+  padding: 6px 0;
+  position: relative;
+  display: inline-block;
+}
+.clientele__name--featured {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--orange-warm);
+}
+.clientele__name--video {
+  cursor: pointer;
+}
+.clientele__name--video .clientele__play-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  background: var(--orange);
+  border-radius: 50%;
+  margin-left: 6px;
+  vertical-align: middle;
+  position: relative;
+  top: -1px;
+}
+.clientele__name--video .clientele__play-icon svg {
+  width: 8px;
+  height: 8px;
+  fill: #fff;
+  margin-left: 1px;
+}
+.clientele__role {
+  display: block;
+  font-weight: 400;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+.clientele__name::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--royal-blue);
+  transition: width 0.3s ease;
+}
+.clientele__name:hover::after { width: 100%; }
+.clientele__list li { margin-bottom: var(--space-sm); }
+.clientele__footnote {
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  letter-spacing: 0.15em;
+  text-align: center;
+  margin-top: var(--space-2xl);
+  text-transform: uppercase;
+}
+
+/* CHANGE #3: Mobile accordion for clientele */
+/* Desktop: keep 4-column grid */
+@media (min-width: 768px) {
+  .clientele__accordion-header { display: none; }
+}
+/* Mobile: accordion */
+@media (max-width: 767px) {
+  .clientele { padding: var(--space-3xl) 0; }
+  .clientele__grid {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .clientele__category {
+    border-bottom: 1px solid var(--card-border);
+  }
+  .clientele__category:last-child {
+    border-bottom: none;
+  }
+  /* Hide the original h3, use accordion header instead */
+  .clientele__category h3 {
+    display: none;
+  }
+  .clientele__accordion-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: var(--space-lg) 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: var(--font-accent);
+    font-size: 1rem;
+    letter-spacing: 0.15em;
+    color: var(--orange);
+    text-transform: uppercase;
+  }
+  .clientele__accordion-chevron {
+    width: 20px;
+    height: 20px;
+    color: var(--orange);
+    transition: transform 0.3s ease;
+    flex-shrink: 0;
+  }
+  .clientele__accordion-header.expanded .clientele__accordion-chevron {
+    transform: rotate(180deg);
+  }
+  .clientele__accordion-body {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s var(--ease-out-smooth), padding 0.3s ease;
+    padding-bottom: 0;
+  }
+  .clientele__accordion-body.expanded {
+    max-height: 600px;
+    padding-bottom: var(--space-lg);
+  }
+  .clientele__name { font-size: 0.85rem; }
+  .clientele__name--featured { font-size: 0.95rem; }
+}
+
+/* ============================== */
+/* VIDEO LIGHTBOX                 */
+/* ============================== */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  background: rgba(0, 0, 0, 0.92);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.35s ease;
+}
+.lightbox.active {
+  opacity: 1;
+  pointer-events: all;
+}
+.lightbox__inner {
+  position: relative;
+  width: 90vw;
+  max-width: 720px;
+}
+.lightbox__close {
+  position: absolute;
+  top: -48px;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2001;
+}
+.lightbox__close svg { width: 28px; height: 28px; }
+.lightbox__close:hover { color: var(--orange); }
+.lightbox video {
+  width: 100%;
+  border-radius: var(--radius-md);
+  background: #000;
+  max-height: 80vh;
+}
+
+/* ============================== */
+/* SECTION 4: BRAND PARTNERSHIPS  */
+/* ============================== */
+.brands { background: var(--cream); padding: var(--space-4xl) 0; overflow: hidden; }
+.marquee {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding: var(--space-lg) 0;
+}
+.marquee::before,
+.marquee::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100px;
+  z-index: 2;
+  pointer-events: none;
+}
+.marquee::before {
+  left: 0;
+  background: linear-gradient(to right, var(--cream), transparent);
+}
+.marquee::after {
+  right: 0;
+  background: linear-gradient(to left, var(--cream), transparent);
+}
+.marquee__track {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3xl);
+  width: max-content;
+  animation: marqueeScroll 25s linear infinite;
+}
+
+/* CHANGE #5: Brand logo images + text fallbacks */
+.marquee__item {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+.marquee__item:hover { opacity: 1; }
+
+/* Logo image styles */
+.marquee__logo {
+  height: 42px;
+  width: auto;
+  max-width: 160px;
+  object-fit: contain;
+  filter: grayscale(1) brightness(0.3);
+  transition: filter 0.3s ease, opacity 0.3s ease;
+}
+.marquee__item:hover .marquee__logo {
+  filter: grayscale(0) brightness(1);
+}
+/* Nike swoosh is very wide/short */
+.marquee__logo--nike { height: 32px; }
+/* White/light logos need inversion on cream bg */
+.marquee__logo--chefman { height: 28px; filter: grayscale(1) brightness(0) !important; }
+.marquee__item:hover .marquee__logo--chefman { filter: grayscale(0) brightness(0.15) !important; }
+/* McDonald's arches */
+.marquee__logo--mcdonalds { height: 48px; }
+/* Conagra - taller logo, use width constraint instead */
+.marquee__logo--conagra { height: auto; width: 120px; }
+
+/* Text-only brand styles (for brands without downloaded logos) */
+.marquee__text {
+  font-size: 1.5rem;
+  letter-spacing: 0.12em;
+  color: var(--light-text-secondary);
+  text-transform: uppercase;
+}
+.marquee__text--heartbeat {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 600;
+  font-style: italic;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+}
+.marquee__text--vector {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.3em;
+}
+.marquee__text--plex {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 1.7rem;
+  letter-spacing: 0.04em;
+}
+
+.marquee__separator {
+  flex-shrink: 0;
+  width: 6px;
+  height: 6px;
+  background: var(--orange);
+  border-radius: 50%;
+  opacity: 0.6;
+}
+@keyframes marqueeScroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+@media (max-width: 767px) {
+  .brands { padding: var(--space-3xl) 0; }
+  .marquee__logo { height: 34px; max-width: 120px; }
+  .marquee__logo--nike { height: 26px; }
+  .marquee__logo--mcdonalds { height: 38px; }
+  .marquee__logo--conagra { height: auto; width: 100px; }
+  .marquee__logo--chefman { height: 22px; }
+  .marquee__text { font-size: 1.2rem !important; }
+  .marquee__track { gap: var(--space-2xl); }
+}
+
+/* ============================== */
+/* SECTION 5: BY THE NUMBERS      */
+/* ============================== */
+.numbers {
+  background: var(--rich-black);
+  background-image: radial-gradient(ellipse at 50% 50%, rgba(27, 58, 140, 0.08) 0%, transparent 70%);
+  padding: var(--space-4xl) 0;
+}
+/* CHANGE #1: 4 columns instead of 5 */
+.numbers__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+  text-align: center;
+}
+.numbers__stat {
+  padding: var(--space-xl) var(--space-md);
+  position: relative;
+}
+.numbers__stat:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 60%;
+  width: 1px;
+  background: var(--card-border);
+}
+.numbers__value {
+  font-family: var(--font-accent);
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  color: var(--text-primary);
+  line-height: 1.0;
+  letter-spacing: 0.02em;
+}
+.numbers__suffix {
+  color: var(--orange);
+}
+.numbers__label {
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin-top: var(--space-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+.numbers__live-dot {
+  width: 8px;
+  height: 8px;
+  background: var(--success);
+  border-radius: 50%;
+  display: inline-block;
+  animation: pulse 2s infinite;
+}
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(1.2); }
+}
+.numbers__footnote {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  text-align: center;
+  margin-top: var(--space-2xl);
+}
+/* CHANGE #7: Mobile stats 2x2 grid */
+@media (max-width: 767px) {
+  .numbers { padding: var(--space-3xl) 0; }
+  .numbers__grid {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-md);
+  }
+  .numbers__stat::after { display: none; }
+  .numbers__stat {
+    padding: var(--space-lg) var(--space-sm);
+  }
+  .numbers__value {
+    font-size: clamp(2rem, 10vw, 2.8rem);
+  }
+  .numbers__label {
+    font-size: 0.65rem;
+    letter-spacing: 0.1em;
+  }
+}
+
+/* ============================== */
+/* SECTION 6: SERVICES            */
+/* ============================== */
+.services { background: var(--charcoal); padding: var(--space-4xl) 0; }
+.services__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-lg);
+}
+.services__card {
+  background: var(--card-bg);
+  border: 1px solid rgba(27, 58, 140, 0.15);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  transition: all 0.35s ease;
+}
+.services__card:hover {
+  border-color: rgba(212, 98, 27, 0.4);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-card-hover);
+}
+.services__icon {
+  width: 40px;
+  height: 40px;
+  margin-bottom: var(--space-md);
+  color: var(--orange);
+}
+.services__card h3 {
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: var(--text-primary);
+  margin-bottom: var(--space-sm);
+}
+.services__card p {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+@media (max-width: 767px) {
+  .services { padding: var(--space-3xl) 0; }
+  .services__grid { grid-template-columns: 1fr; }
+  .services__card {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .services__grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* ============================== */
+/* SECTION 7: THE FOOD (GALLERY)  */
+/* ============================== */
+.food { background: var(--cream); padding: var(--space-4xl) 0; overflow: hidden; }
+.gallery {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.gallery::before,
+.gallery::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 60px;
+  z-index: 2;
+  pointer-events: none;
+}
+.gallery::before {
+  left: 0;
+  background: linear-gradient(to right, var(--cream), transparent);
+}
+.gallery::after {
+  right: 0;
+  background: linear-gradient(to left, var(--cream), transparent);
+}
+.gallery__track {
+  display: flex;
+  gap: var(--space-md);
+  width: max-content;
+  animation: galleryScroll 40s linear infinite;
+}
+.gallery__track:hover {
+  animation-play-state: paused;
+}
+.gallery__item {
+  flex-shrink: 0;
+  height: 260px;
+  width: 360px;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  position: relative;
+}
+.gallery__item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+.gallery__item:hover img { transform: scale(1.05); }
+.gallery__item::after {
+  content: attr(data-dish);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 2.5rem 1rem 0.75rem;
+  background: linear-gradient(to top, rgba(0,0,0,0.6) 0%, transparent 100%);
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 0.8rem;
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+.gallery__item:hover::after { opacity: 1; }
+@keyframes galleryScroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+@media (max-width: 767px) {
+  .food { padding: var(--space-3xl) 0; }
+  .gallery__item { height: 200px; width: 280px; }
+  .gallery__item::after { opacity: 1; }
+  .gallery__track {
+    animation-duration: 30s;
+    /* Allow manual swipe on mobile */
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+/* ============================== */
+/* SECTION 8: THE VENTURES        */
+/* ============================== */
+.ventures { background: var(--charcoal); padding: var(--space-4xl) 0; }
+.ventures__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-lg);
+}
+.ventures__card {
+  background: var(--card-bg);
+  border: 1px solid rgba(27, 58, 140, 0.15);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.35s ease;
+}
+.ventures__card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--royal-blue), var(--orange));
+}
+.ventures__card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-card-hover);
+}
+.ventures__card-icon {
+  width: 40px;
+  height: 40px;
+  margin-bottom: var(--space-md);
+  color: var(--orange);
+}
+.ventures__card h3 {
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--text-primary);
+  margin-bottom: var(--space-xs);
+}
+.ventures__card .ventures__est {
+  font-family: var(--font-accent);
+  font-size: 0.8rem;
+  color: var(--gold);
+  letter-spacing: 0.1em;
+  margin-bottom: var(--space-md);
+}
+.ventures__card p {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+@media (max-width: 767px) {
+  .ventures { padding: var(--space-3xl) 0; }
+  .ventures__grid { grid-template-columns: 1fr 1fr; gap: var(--space-md); }
+}
+@media (max-width: 479px) {
+  .ventures__grid { grid-template-columns: 1fr; }
+}
+
+/* ============================== */
+/* SECTION 9: PRESS & MEDIA       */
+/* ============================== */
+.press { background: var(--rich-black); padding: var(--space-4xl) 0; overflow: hidden; }
+.press__filmstrip-wrap {
+  position: relative;
+  margin: 0 calc(-1 * var(--space-lg));
+  overflow: hidden;
+}
+.press__filmstrip-wrap::before,
+.press__filmstrip-wrap::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 80px;
+  z-index: 2;
+  pointer-events: none;
+}
+.press__filmstrip-wrap::before {
+  left: 0;
+  background: linear-gradient(to right, var(--rich-black), transparent);
+}
+.press__filmstrip-wrap::after {
+  right: 0;
+  background: linear-gradient(to left, var(--rich-black), transparent);
+}
+.press__filmstrip {
+  display: flex;
+  gap: var(--space-md);
+  padding: 0 var(--space-md);
+  width: max-content;
+  animation: filmstripScroll 35s linear infinite;
+}
+.press__filmstrip:hover {
+  animation-play-state: paused;
+}
+@keyframes filmstripScroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.press__filmstrip-item {
+  flex: 0 0 400px;
+  height: 225px;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  scroll-snap-align: start;
+}
+.press__filmstrip-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: filter 0.3s ease;
+}
+.press__filmstrip-item:hover img { filter: brightness(1.1); }
+
+/* CHANGE #6: Video items in filmstrip */
+.press__filmstrip-item video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: var(--radius-md);
+}
+.press__filmstrip-item--video {
+  position: relative;
+}
+
+@media (max-width: 767px) {
+  .press { padding: var(--space-3xl) 0; }
+  .press__filmstrip-item {
+    flex: 0 0 300px;
+    height: 169px;
+  }
+}
+
+/* ============================== */
+/* SECTION 10: CONTACT            */
+/* ============================== */
+.contact {
+  background: var(--rich-black);
+  padding: var(--space-4xl) 0 var(--space-3xl);
+  position: relative;
+}
+.contact::before {
+  content: '';
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 800px;
+  height: 300px;
+  background: linear-gradient(135deg, rgba(27, 58, 140, 0.15), rgba(212, 98, 27, 0.1));
+  border-radius: 50%;
+  filter: blur(80px);
+  pointer-events: none;
+}
+.contact .container { position: relative; z-index: 2; text-align: center; }
+.contact__card {
+  max-width: 640px;
+  margin: 0 auto var(--space-2xl);
+  background: rgba(20, 20, 40, 0.9);
+  border: 1px solid rgba(27, 58, 140, 0.3);
+  border-radius: var(--radius-xl);
+  padding: 3rem;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+.contact__subtitle {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 1rem;
+  color: var(--text-secondary);
+  margin-bottom: var(--space-xl);
+}
+.contact__cta {
+  display: inline-block;
+  background: linear-gradient(135deg, var(--orange), var(--orange-warm));
+  color: #fff;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.9rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  padding: 16px 48px;
+  border-radius: var(--radius-pill);
+  transition: all 0.35s ease;
+  animation: ctaPulse 2s infinite;
+}
+.contact__cta:hover {
+  transform: scale(1.03);
+  box-shadow: var(--shadow-orange-glow);
+}
+@keyframes ctaPulse {
+  0%, 100% { box-shadow: 0 4px 20px rgba(212, 98, 27, 0.2); }
+  50% { box-shadow: 0 4px 30px rgba(212, 98, 27, 0.5); }
+}
+.contact__socials {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-lg);
+  margin: var(--space-xl) 0;
+}
+.contact__social-link {
+  color: var(--text-muted);
+  transition: color 0.3s ease;
+}
+.contact__social-link:hover { color: var(--text-primary); }
+.contact__social-link svg { width: 28px; height: 28px; }
+.contact__info {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+}
+.contact__info a {
+  color: var(--text-secondary);
+  transition: color 0.3s ease;
+}
+.contact__info a:hover { color: var(--orange); }
+.contact__logo {
+  width: 120px;
+  margin: 0 auto var(--space-xl);
+  opacity: 0.6;
+}
+.contact__footer {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+@media (max-width: 767px) {
+  .contact { padding: var(--space-3xl) 0 var(--space-2xl); }
+  .contact__card { padding: 2rem var(--space-lg); }
+  .contact__cta { display: block; width: 100%; padding: 16px 24px; }
+}
+
+/* ============================== */
+/* POWERED BY FOOTER              */
+/* ============================== */
+.powered-by {
+  background: #08080C;
+  padding: 16px 0 24px;
+  text-align: center;
+}
+.powered-by__text {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+.powered-by__link {
+  color: var(--orange);
+  font-weight: 700;
+  transition: color 0.3s ease;
+}
+.powered-by__link:hover {
+  color: var(--orange-warm);
+}
+</style>
+</head>
+<body>
+
+<!-- ======================== -->
+<!-- NAVIGATION               -->
+<!-- ======================== -->
+<nav class="nav" id="mainNav" role="navigation" aria-label="Main navigation">
+  <div class="nav__inner">
+    <a href="#hero" class="nav__brand">
+      <img src="./assets/WOTM logo.webp" alt="WOTM Logo" class="nav__logo-img">
+      <span class="nav__brand-name">Chef Christina Gray</span>
+    </a>
+    <div class="nav__links" role="menubar">
+      <a href="#story" class="nav__link" role="menuitem">The Story</a>
+      <a href="#clientele" class="nav__link" role="menuitem">Clientele</a>
+      <a href="#brands" class="nav__link" role="menuitem">Brands</a>
+      <a href="#numbers" class="nav__link" role="menuitem">Stats</a>
+      <a href="#services" class="nav__link" role="menuitem">Services</a>
+      <a href="#food" class="nav__link" role="menuitem">Gallery</a>
+      <a href="#contact" class="nav__link" role="menuitem">Contact</a>
+    </div>
+    <button class="nav__hamburger" id="hamburger" aria-label="Open navigation menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile overlay -->
+<div class="nav__overlay" id="navOverlay" role="dialog" aria-label="Navigation menu">
+  <a href="#story" class="nav__overlay-link">The Story</a>
+  <a href="#clientele" class="nav__overlay-link">Clientele</a>
+  <a href="#brands" class="nav__overlay-link">Brands</a>
+  <a href="#numbers" class="nav__overlay-link">Stats</a>
+  <a href="#services" class="nav__overlay-link">Services</a>
+  <a href="#food" class="nav__overlay-link">Gallery</a>
+  <a href="#contact" class="nav__overlay-link">Contact</a>
+</div>
+
+<!-- ======================== -->
+<!-- VIDEO LIGHTBOX            -->
+<!-- ======================== -->
+<!-- CHANGE #4: Fixed Angel Reese video source -->
+<div class="lightbox" id="videoLightbox" role="dialog" aria-label="Video testimonial" aria-hidden="true">
+  <div class="lightbox__inner">
+    <button class="lightbox__close" id="lightboxClose" aria-label="Close video">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <video id="lightboxVideo" controls preload="none" playsinline>
+      <source src="./assets/Angel Reese.mov" type="video/quicktime">
+      <source src="./assets/Angel Reese.mov" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</div>
+
+<!-- ======================== -->
+<!-- SECTION 1: HERO          -->
+<!-- ======================== -->
+<section class="hero" id="hero" aria-label="Hero">
+  <div class="hero__inner">
+    <div class="hero__image-wrap">
+      <img src="./assets/Chef Tina - Cutout.png" alt="Chef Christina Gray in black chef coat with Razzle Dazzle products" class="hero__image">
+    </div>
+    <div class="hero__content">
+      <div class="hero__est">EST. 2013</div>
+      <h1 class="hero__name">
+        <span>Chef</span>
+        <span>Christina</span>
+        <span>Gray</span>
+      </h1>
+      <div class="hero__divider" role="presentation"></div>
+      <p class="hero__tagline">Culinary Artist. Brand Partner.<br class="mobile-break"> Cultural Force.</p>
+    </div>
+  </div>
+
+</section>
+
+<!-- ======================== -->
+<!-- SECTION 2: THE STORY     -->
+<!-- ======================== -->
+<section class="story" id="story" aria-label="The Story">
+  <div class="scroll-prompt" aria-hidden="true">
+    <span class="scroll-prompt__text">Scroll</span>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+  </div>
+  <div class="container">
+    <div class="section-label reveal-left">The Story</div>
+    <h2 class="section-title reveal-up" style="transition-delay:0.1s">From Chicago's South Side<br>to Celebrity Kitchens</h2>
+    <div class="story__grid">
+      <div class="story__text reveal-up" style="transition-delay:0.2s">
+        <p>Chef Christina Gray's culinary journey began on Chicago's South Side, where she first experimented with cooking for friends and family. Her talent flourished during a stint in broadcast radio, where she delighted coworkers with her dishes, eventually shifting her focus from the airwaves to the kitchen full-time in 2013.</p>
+        <p>Her drive to elevate her craft brought her to Los Angeles, where she quickly built a reputation as the go-to private chef for entertainment's elite. From intimate dinners for NBA All-Stars to yacht catering for BET Weekend and Black Yacht Week, Chef Tina became known for dishes that blend bold flavors with impeccable presentation.</p>
+        <div class="story__expandable" id="storyExpand">
+          <p>Beyond the celebrity kitchen, she's championed causes close to her heart, advocating for underprivileged children in Uganda and exploring high-end American-fusion dining in Ghana. Her nonprofit, The Ruby Foundation, transforms lives through culinary excellence and community engagement.</p>
+          <p>In 2020, she turned the pandemic into opportunity, launching Razzle Dazzle, her artisan hot sauce and seasoning line. Today, she serves as Executive Event Chef for the Chicago Fire FC, feeding 60+ professional athletes daily while continuing to grow her brand partnerships and culinary legacy.</p>
+        </div>
+        <button class="story__toggle" id="storyToggle" aria-expanded="false" aria-controls="storyExpand">
+          <span>Read More</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+      </div>
+      <aside class="story__pullquote reveal-right" style="transition-delay:0.3s">
+        <blockquote>"I don't just cook for people. I create moments they remember."</blockquote>
+        <cite>- Chef Christina Gray</cite>
+      </aside>
+    </div>
+    <div class="story__divider reveal-fade" style="transition-delay:0.4s"></div>
+  </div>
+</section>
+
+<!-- ======================== -->
+<!-- SECTION 3: CLIENTELE     -->
+<!-- CHANGE #3: Added accordion headers for mobile -->
+<!-- ======================== -->
+<section class="clientele" id="clientele" aria-label="Celebrity Clientele">
+  <div class="container">
+    <div class="section-label reveal-left">Clientele</div>
+    <h2 class="section-title reveal-up" style="transition-delay:0.1s">The Names That Trust Her Kitchen</h2>
+    <div class="clientele__grid">
+
+      <div class="clientele__category reveal-up stagger-1">
+        <button class="clientele__accordion-header" aria-expanded="false" aria-controls="accordion-entertainment">
+          <span>Entertainment</span>
+          <svg class="clientele__accordion-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <h3>Entertainment</h3>
+        <div class="clientele__accordion-body" id="accordion-entertainment">
+          <ul class="clientele__list">
+            <li><span class="clientele__name clientele__name--featured">Kevin Hart<span class="clientele__role">Actor / Comedian</span></span></li>
+            <li><span class="clientele__name">Tiffany Haddish<span class="clientele__role">Actress, Girls Trip</span></span></li>
+            <li><span class="clientele__name">Lil Rel Howery<span class="clientele__role">Actor / Comedian</span></span></li>
+            <li><span class="clientele__name">Sterling Brim<span class="clientele__role">MTV's Ridiculousness</span></span></li>
+            <li><span class="clientele__name">Jasmin Brown<span class="clientele__role">Actress</span></span></li>
+            <li><span class="clientele__name">Director Lil X<span class="clientele__role">Director</span></span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="clientele__category reveal-up stagger-2">
+        <button class="clientele__accordion-header" aria-expanded="false" aria-controls="accordion-sports">
+          <span>Sports</span>
+          <svg class="clientele__accordion-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <h3>Sports</h3>
+        <div class="clientele__accordion-body" id="accordion-sports">
+          <ul class="clientele__list">
+            <li><span class="clientele__name clientele__name--featured">Derrick Rose<span class="clientele__role">NBA Legend</span></span></li>
+            <li><span class="clientele__name clientele__name--featured clientele__name--video" id="angelReeseTrigger" role="button" tabindex="0" aria-label="Play Angel Reese video testimonial">Angel Reese<span class="clientele__play-icon"><svg viewBox="0 0 10 12"><polygon points="1,0 10,6 1,12"/></svg></span><span class="clientele__role">WNBA Star</span></span></li>
+            <li><span class="clientele__name">Zach LaVine<span class="clientele__role">Chicago Bulls</span></span></li>
+            <li><span class="clientele__name">Zion Williamson<span class="clientele__role">New Orleans Pelicans</span></span></li>
+            <li><span class="clientele__name">Draymond Green<span class="clientele__role">Golden State Warriors</span></span></li>
+            <li><span class="clientele__name">Melvin Gordon<span class="clientele__role">NFL</span></span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="clientele__category reveal-up stagger-3">
+        <button class="clientele__accordion-header" aria-expanded="false" aria-controls="accordion-music">
+          <span>Music / Industry</span>
+          <svg class="clientele__accordion-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <h3>Music / Industry</h3>
+        <div class="clientele__accordion-body" id="accordion-music">
+          <ul class="clientele__list">
+            <li><span class="clientele__name clientele__name--featured">Lil Durk<span class="clientele__role">Rapper</span></span></li>
+            <li><span class="clientele__name">Steve Rifkind<span class="clientele__role">Chairman, Loud Records</span></span></li>
+            <li><span class="clientele__name">John Monopoly<span class="clientele__role">Manager/A&R, Good Music</span></span></li>
+            <li><span class="clientele__name">Justice Baiden<span class="clientele__role">LVRN Manager</span></span></li>
+            <li><span class="clientele__name">Thai Randolph<span class="clientele__role">EVP, Laugh Out Loud</span></span></li>
+            <li><span class="clientele__name">Moya Nkruma<span class="clientele__role">Director of Urban, ASCAP</span></span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="clientele__category reveal-up stagger-4">
+        <button class="clientele__accordion-header" aria-expanded="false" aria-controls="accordion-fashion">
+          <span>Fashion / Lifestyle</span>
+          <svg class="clientele__accordion-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <h3>Fashion / Lifestyle</h3>
+        <div class="clientele__accordion-body" id="accordion-fashion">
+          <ul class="clientele__list">
+            <li><span class="clientele__name clientele__name--featured">Don C<span class="clientele__role">Designer, RSVP / Just Don</span></span></li>
+            <li><span class="clientele__name">Conna Walker<span class="clientele__role">Owner, House of CB</span></span></li>
+            <li><span class="clientele__name">Kristen Crawley<span class="clientele__role">Beauty Guru</span></span></li>
+            <li><span class="clientele__name">Mieka Reese<span class="clientele__role">Stylist, Rich Girl Candy</span></span></li>
+            <li><span class="clientele__name">Casey Billingsley<span class="clientele__role">Celebrity Stylist</span></span></li>
+            <li><span class="clientele__name">Derrick Hardy<span class="clientele__role">Director, ArtClub</span></span></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+    <p class="clientele__footnote reveal-fade" style="transition-delay:0.5s">24+ Celebrity Clients and Counting</p>
+  </div>
+</section>
+
+<!-- ======================== -->
+<!-- SECTION 4: BRANDS        -->
+<!-- CHANGE #5: Brand logo-style wordmarks -->
+<!-- ======================== -->
+<section class="brands" id="brands" aria-label="Brand Partnerships">
+  <div class="container">
+    <div class="section-label section-label--light reveal-left">Partnerships</div>
+    <h2 class="section-title section-title--dark reveal-up" style="transition-delay:0.1s">Brands She's Worked With</h2>
+  </div>
+  <div class="marquee reveal-fade" style="transition-delay:0.2s">
+    <div class="marquee__track" id="marqueeTrack">
+      <span class="marquee__item"><img src="assets/logos/fox.png" alt="FOX" class="marquee__logo"></span>
+      <span class="marquee__separator" aria-hidden="true"></span>
+      <span class="marquee__item"><img src="assets/logos/nike.png" alt="Nike" class="marquee__logo marquee__logo--nike"></span>
+      <span class="marquee__separator" aria-hidden="true"></span>
+      <span class="marquee__item"><img src="assets/logos/mcdonalds.png" alt="McDonald's" class="marquee__logo marquee__logo--mcdonalds"></span>
+      <span class="marquee__separator" aria-hidden="true"></span>
+      <span class="marquee__item"><img src="assets/logos/puma.png" alt="PUMA" class="marquee__logo"></span>
+      <span class="marquee__separator" aria-hidden="true"></span>
+      <span class="marquee__item"><img src="assets/logos/fender.png" alt="Fender" class="marquee__logo"></span>
+      <span class="marquee__separator" aria-hidden="true"></span>
+      <span class="marquee__item"><img src="assets/logos/chefman.png" alt="ChefMan" class="marquee__logo marquee__logo--chefman"></span>
+      <span class="marquee__separator" aria-hidden="true"></span>
+      <span class="marquee__item"><img src="assets/logos/conagra.png" alt="Conagra" class="marquee__logo marquee__logo--conagra"></span>
+      <span class="marquee__separator" aria-hidden="true"></span>
+      <span class="marquee__item"><img src="assets/logos/hartbeat.png" alt="Hartbeat" class="marquee__logo marquee__logo--chefman"></span>
+      <span class="marquee__separator" aria-hidden="true"></span>
+      <span class="marquee__item"><span class="marquee__text marquee__text--vector">Vector</span></span>
+      <span class="marquee__separator" aria-hidden="true"></span>
+      <span class="marquee__item"><span class="marquee__text marquee__text--plex">Plex</span></span>
+      <span class="marquee__separator" aria-hidden="true"></span>
+      <!-- Duplicate set for seamless loop -->
+      <span class="marquee__item"><img src="assets/logos/fox.png" alt="FOX" class="marquee__logo"></span>
+      <span class="marquee__separator" aria-hidden="true"></span>
+      <span class="marquee__item"><img src="assets/logos/nike.png" alt="Nike" class="marquee__logo marquee__logo--nike"></span>
+      <span class="marquee__separator" aria-hidden="true"></span>
+      <span class="marquee__item"><img src="assets/logos/mcdonalds.png" alt="McDonald's" class="marquee__logo marquee__logo--mcdonalds"></span>
+      <span class="marquee__separator" aria-hidden="true"></span>
+      <span class="marquee__item"><img src="assets/logos/puma.png" alt="PUMA" class="marquee__logo"></span>
+      <span class="marquee__separator" aria-hidden="true"></span>
+      <span class="marquee__item"><img src="assets/logos/fender.png" alt="Fender" class="marquee__logo"></span>
+      <span class="marquee__separator" aria-hidden="true"></span>
+      <span class="marquee__item"><img src="assets/logos/chefman.png" alt="ChefMan" class="marquee__logo marquee__logo--chefman"></span>
+      <span class="marquee__separator" aria-hidden="true"></span>
+      <span class="marquee__item"><img src="assets/logos/conagra.png" alt="Conagra" class="marquee__logo marquee__logo--conagra"></span>
+      <span class="marquee__separator" aria-hidden="true"></span>
+      <span class="marquee__item"><img src="assets/logos/hartbeat.png" alt="Hartbeat" class="marquee__logo marquee__logo--chefman"></span>
+      <span class="marquee__separator" aria-hidden="true"></span>
+      <span class="marquee__item"><span class="marquee__text marquee__text--vector">Vector</span></span>
+      <span class="marquee__separator" aria-hidden="true"></span>
+      <span class="marquee__item"><span class="marquee__text marquee__text--plex">Plex</span></span>
+      <span class="marquee__separator" aria-hidden="true"></span>
+    </div>
+  </div>
+</section>
+
+<!-- ======================== -->
+<!-- SECTION 5: BY THE NUMBERS -->
+<!-- CHANGE #1: Removed "82% Avg Impressions" stat, now 4 stats -->
+<!-- ======================== -->
+<section class="numbers" id="numbers" aria-label="By the Numbers">
+  <div class="container">
+    <div class="section-label reveal-left">By the Numbers</div>
+    <h2 class="section-title reveal-up" style="transition-delay:0.1s">The Reach Behind the Brand</h2>
+    <div class="numbers__grid">
+      <div class="numbers__stat reveal-up stagger-1">
+        <div class="numbers__value"><span class="counter" data-target="28.5" data-decimals="1">0</span><span class="numbers__suffix">K</span></div>
+        <div class="numbers__label">Total Followers</div>
+      </div>
+      <div class="numbers__stat reveal-up stagger-2">
+        <div class="numbers__value"><span class="counter" data-target="264.2" data-decimals="1">0</span><span class="numbers__suffix">K</span></div>
+        <div class="numbers__label">Views <span class="numbers__live-dot" title="Live data"></span> 30 Days</div>
+      </div>
+      <div class="numbers__stat reveal-up stagger-3">
+        <div class="numbers__value"><span class="counter" data-target="67.8" data-decimals="1">0</span><span class="numbers__suffix">%</span></div>
+        <div class="numbers__label">Target Demo (25-44)</div>
+      </div>
+      <div class="numbers__stat reveal-up stagger-4">
+        <div class="numbers__value"><span class="counter" data-target="4.3" data-decimals="1">0</span><span class="numbers__suffix">%</span></div>
+        <div class="numbers__label">Engagement Rate</div>
+      </div>
+    </div>
+    <p class="numbers__footnote reveal-fade" style="transition-delay:0.6s">Source: Instagram Analytics (WOTM + Personal), 30-day rolling average</p>
+  </div>
+</section>
+
+<!-- ======================== -->
+<!-- SECTION 6: SERVICES      -->
+<!-- ======================== -->
+<section class="services" id="services" aria-label="Services">
+  <div class="container">
+    <div class="section-label reveal-left">Services</div>
+    <h2 class="section-title reveal-up" style="transition-delay:0.1s">How Brands Work With Chef Tina</h2>
+    <div class="services__grid">
+
+      <div class="services__card reveal-up stagger-1">
+        <svg class="services__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/><circle cx="12" cy="10" r="3"/></svg>
+        <h3>Sponsored Recipe Videos</h3>
+        <p>High-quality cooking videos featuring your brand's products, distributed across her social platforms to engaged audiences.</p>
+      </div>
+
+      <div class="services__card reveal-up stagger-2">
+        <svg class="services__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+        <h3>Branded Food &amp; Lifestyle Content</h3>
+        <p>Original recipes and lifestyle content created around your product, with professional photography and video production.</p>
+      </div>
+
+      <div class="services__card reveal-up stagger-3">
+        <svg class="services__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        <h3>UGC (Chef-Led or Faceless)</h3>
+        <p>Authentic, creator-style content ready for your brand's own channels, tailored to your target demographics.</p>
+      </div>
+
+      <div class="services__card reveal-up stagger-4">
+        <svg class="services__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+        <h3>Recipe &amp; Menu Development</h3>
+        <p>Custom recipe creation and menu consulting for product launches, seasonal campaigns, and brand activations.</p>
+      </div>
+
+      <div class="services__card reveal-up stagger-5">
+        <svg class="services__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        <h3>Culinary Pop-Ups + Live Activations</h3>
+        <p>Live cooking experiences at brand activations, product launches, VIP events, and experiential marketing campaigns.</p>
+      </div>
+
+      <div class="services__card reveal-up stagger-6">
+        <svg class="services__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+        <h3>Product Integrations</h3>
+        <p>Organic placement of your brand in her cooking content, client events, and professional kitchen, reaching food, wellness, home, and kitchen audiences.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ======================== -->
+<!-- SECTION 7: THE FOOD      -->
+<!-- ======================== -->
+<section class="food" id="food" aria-label="Food Gallery">
+  <div class="container">
+    <div class="section-label section-label--light reveal-left">The Food</div>
+    <h2 class="section-title section-title--dark reveal-up" style="transition-delay:0.1s">A Taste of the Experience</h2>
+  </div>
+  <div class="gallery reveal-fade" style="transition-delay:0.2s">
+    <div class="gallery__track" id="galleryTrack">
+      <div class="gallery__item" data-dish="Smoked Salmon Blinis with Caviar">
+        <img src="./assets/Photo Sep 27 2025, 6 22 35 PM.jpg" alt="Smoked salmon blinis topped with caviar, a luxury appetizer" loading="lazy">
+      </div>
+      <div class="gallery__item" data-dish="Tostones with Pulled Pork">
+        <img src="./assets/Photo Nov 11 2025, 8 15 10 PM.jpg" alt="Artisan tostones with pulled pork on rustic wood board" loading="lazy">
+      </div>
+      <div class="gallery__item" data-dish="Fine Dining Plated Dishes">
+        <img src="./assets/Photo Aug 23 2025, 7 50 29 PM.jpg" alt="Beautifully plated fine dining dishes" loading="lazy">
+      </div>
+      <div class="gallery__item" data-dish="Colorful Slaw Cups with Dragon Fruit">
+        <img src="./assets/Photo Nov 11 2025, 8 15 14 PM.jpg" alt="Vibrant slaw cups with fresh dragon fruit garnish" loading="lazy">
+      </div>
+      <div class="gallery__item" data-dish="Artisan Appetizers on Wooden Boards">
+        <img src="./assets/Photo Aug 23 2025, 7 02 57 PM.jpg" alt="Artisan appetizers beautifully arranged on wooden boards" loading="lazy">
+      </div>
+      <div class="gallery__item" data-dish="Grain Dish with Roasted Carrots">
+        <img src="./assets/Photo Aug 23 2025, 8 08 42 PM.jpg" alt="Hearty grain dish topped with roasted carrots" loading="lazy">
+      </div>
+      <div class="gallery__item" data-dish="Brussels Sprouts">
+        <img src="./assets/Photo Aug 23 2025, 8 33 21 PM.jpg" alt="Roasted brussels sprouts in a black bowl" loading="lazy">
+      </div>
+      <div class="gallery__item" data-dish="Fried Chicken Catering Setup">
+        <img src="./assets/Photo Mar 26 2026, 5 27 44 PM.jpg" alt="Fried chicken and wings catering setup" loading="lazy">
+      </div>
+      <!-- Duplicate set for seamless loop -->
+      <div class="gallery__item" data-dish="Smoked Salmon Blinis with Caviar">
+        <img src="./assets/Photo Sep 27 2025, 6 22 35 PM.jpg" alt="Smoked salmon blinis topped with caviar, a luxury appetizer" loading="lazy">
+      </div>
+      <div class="gallery__item" data-dish="Tostones with Pulled Pork">
+        <img src="./assets/Photo Nov 11 2025, 8 15 10 PM.jpg" alt="Artisan tostones with pulled pork on rustic wood board" loading="lazy">
+      </div>
+      <div class="gallery__item" data-dish="Fine Dining Plated Dishes">
+        <img src="./assets/Photo Aug 23 2025, 7 50 29 PM.jpg" alt="Beautifully plated fine dining dishes" loading="lazy">
+      </div>
+      <div class="gallery__item" data-dish="Colorful Slaw Cups with Dragon Fruit">
+        <img src="./assets/Photo Nov 11 2025, 8 15 14 PM.jpg" alt="Vibrant slaw cups with fresh dragon fruit garnish" loading="lazy">
+      </div>
+      <div class="gallery__item" data-dish="Artisan Appetizers on Wooden Boards">
+        <img src="./assets/Photo Aug 23 2025, 7 02 57 PM.jpg" alt="Artisan appetizers beautifully arranged on wooden boards" loading="lazy">
+      </div>
+      <div class="gallery__item" data-dish="Grain Dish with Roasted Carrots">
+        <img src="./assets/Photo Aug 23 2025, 8 08 42 PM.jpg" alt="Hearty grain dish topped with roasted carrots" loading="lazy">
+      </div>
+      <div class="gallery__item" data-dish="Brussels Sprouts">
+        <img src="./assets/Photo Aug 23 2025, 8 33 21 PM.jpg" alt="Roasted brussels sprouts in a black bowl" loading="lazy">
+      </div>
+      <div class="gallery__item" data-dish="Fried Chicken Catering Setup">
+        <img src="./assets/Photo Mar 26 2026, 5 27 44 PM.jpg" alt="Fried chicken and wings catering setup" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================== -->
+<!-- SECTION 8: THE VENTURES  -->
+<!-- ======================== -->
+<section class="ventures" id="ventures" aria-label="The Ventures">
+  <div class="container">
+    <div class="section-label reveal-left">The Ventures</div>
+    <h2 class="section-title reveal-up" style="transition-delay:0.1s">Beyond the Kitchen</h2>
+    <div class="ventures__grid">
+
+      <div class="ventures__card reveal-up stagger-1">
+        <svg class="ventures__card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3h18v18H3z"/><path d="M12 8v8"/><path d="M8 12h8"/></svg>
+        <h3>What's On The Menu</h3>
+        <div class="ventures__est">Est. 2013</div>
+        <p>Full-service catering, private chef, meal prep. From Chicago to LA to nationwide, serving celebrities, corporate events, and brand activations.</p>
+      </div>
+
+      <div class="ventures__card reveal-up stagger-2">
+        <svg class="ventures__card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+        <h3>The Ruby Foundation</h3>
+        <div class="ventures__est">Nonprofit</div>
+        <p>Transforming lives through culinary excellence and community engagement, advocating for underprivileged children and youth nutrition education.</p>
+      </div>
+
+      <div class="ventures__card reveal-up stagger-3">
+        <svg class="ventures__card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        <h3>Razzle Dazzle</h3>
+        <div class="ventures__est">Est. 2020</div>
+        <p>Artisan hot sauce and seasoning line. Born during COVID. Bold flavors, small batch, crafted from original recipes perfected over a decade.</p>
+      </div>
+
+      <div class="ventures__card reveal-up stagger-4">
+        <svg class="ventures__card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
+        <h3>Chicago Fire FC</h3>
+        <div class="ventures__est">Executive Event Chef</div>
+        <p>Feeding 60+ professional athletes daily with performance-driven nutrition for one of MLS's premier franchises.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ======================== -->
+<!-- SECTION 9: PRESS & MEDIA -->
+<!-- CHANGE #6: Added BTS videos mixed into filmstrip -->
+<!-- ======================== -->
+<section class="press" id="press" aria-label="Press and Media">
+  <div class="container">
+    <div class="section-label reveal-left">Press &amp; Media</div>
+    <h2 class="section-title reveal-up" style="transition-delay:0.1s">Camera Ready</h2>
+  </div>
+  <div class="press__filmstrip-wrap reveal-right" style="transition-delay:0.2s">
+    <div class="press__filmstrip" id="filmstrip">
+      <div class="press__filmstrip-item">
+        <img src="./assets/Photo Nov 15 2025, 1 37 17 PM.jpg" alt="Professional video shoot setup with Chef Christina Gray" loading="lazy">
+      </div>
+      <div class="press__filmstrip-item">
+        <img src="./assets/Photo Nov 15 2025, 3 10 21 PM.jpg" alt="Cameraman filming Chef Christina Gray in the kitchen" loading="lazy">
+      </div>
+      <div class="press__filmstrip-item press__filmstrip-item--video">
+        <video muted playsinline preload="metadata" loop>
+          <source src="./assets/Video Nov 19 2024, 10 08 32 AM.mov" type="video/quicktime">
+          <source src="./assets/Video Nov 19 2024, 10 08 32 AM.mov" type="video/mp4">
+        </video>
+      </div>
+      <div class="press__filmstrip-item">
+        <img src="./assets/Photo Nov 15 2025, 3 14 40 PM.jpg" alt="Chef Christina Gray using blender while being filmed" loading="lazy">
+      </div>
+      <div class="press__filmstrip-item press__filmstrip-item--video">
+        <video muted playsinline preload="metadata" loop>
+          <source src="./assets/Video Nov 19 2024, 8 43 19 AM.mov" type="video/quicktime">
+          <source src="./assets/Video Nov 19 2024, 8 43 19 AM.mov" type="video/mp4">
+        </video>
+      </div>
+      <div class="press__filmstrip-item">
+        <img src="./assets/Photo Nov 15 2025, 3 31 36 PM.jpg" alt="Overhead kitchen shoot with Chef Christina Gray" loading="lazy">
+      </div>
+      <div class="press__filmstrip-item">
+        <img src="./assets/Chef Tina.webp" alt="Chef Christina Gray in her kitchen" loading="lazy">
+      </div>
+      <!-- Duplicate set for seamless loop -->
+      <div class="press__filmstrip-item">
+        <img src="./assets/Photo Nov 15 2025, 1 37 17 PM.jpg" alt="Professional video shoot setup" loading="lazy">
+      </div>
+      <div class="press__filmstrip-item">
+        <img src="./assets/Photo Nov 15 2025, 3 10 21 PM.jpg" alt="Cameraman filming Chef Christina Gray" loading="lazy">
+      </div>
+      <div class="press__filmstrip-item press__filmstrip-item--video">
+        <video muted playsinline preload="metadata" loop autoplay>
+          <source src="./assets/Video Nov 19 2024, 10 08 32 AM.mov" type="video/quicktime">
+          <source src="./assets/Video Nov 19 2024, 10 08 32 AM.mov" type="video/mp4">
+        </video>
+      </div>
+      <div class="press__filmstrip-item">
+        <img src="./assets/Photo Nov 15 2025, 3 14 40 PM.jpg" alt="Chef Christina Gray using blender" loading="lazy">
+      </div>
+      <div class="press__filmstrip-item press__filmstrip-item--video">
+        <video muted playsinline preload="metadata" loop autoplay>
+          <source src="./assets/Video Nov 19 2024, 8 43 19 AM.mov" type="video/quicktime">
+          <source src="./assets/Video Nov 19 2024, 8 43 19 AM.mov" type="video/mp4">
+        </video>
+      </div>
+      <div class="press__filmstrip-item">
+        <img src="./assets/Photo Nov 15 2025, 3 31 36 PM.jpg" alt="Overhead kitchen shoot" loading="lazy">
+      </div>
+      <div class="press__filmstrip-item">
+        <img src="./assets/Chef Tina.webp" alt="Chef Christina Gray in her kitchen" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================== -->
+<!-- SECTION 10: CONTACT      -->
+<!-- ======================== -->
+<section class="contact" id="contact" aria-label="Contact and Booking">
+  <div class="container">
+    <div class="section-label reveal-left">Let's Connect</div>
+    <h2 class="section-title reveal-up" style="transition-delay:0.1s;text-align:center">Ready to Create Something<br>Unforgettable?</h2>
+    <div class="contact__card reveal-scale" style="transition-delay:0.2s">
+      <p class="contact__subtitle">For brand partnership inquiries, event bookings, and collaborations</p>
+      <a href="mailto:info@WOTMCaters.com" class="contact__cta">Partner With Chef Tina</a>
+      <div class="contact__socials">
+        <a href="https://www.instagram.com/whoischristinagray" target="_blank" rel="noopener noreferrer" class="contact__social-link" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        </a>
+        <a href="https://www.wotmcaters.com" target="_blank" rel="noopener noreferrer" class="contact__social-link" aria-label="Website">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+        </a>
+      </div>
+      <div class="contact__info">
+        <a href="mailto:info@WOTMCaters.com">info@WOTMCaters.com</a><br>
+        <a href="tel:8188181634">818.818.1634</a><br>
+        <a href="https://www.wotmcaters.com" target="_blank" rel="noopener noreferrer">www.wotmcaters.com</a>
+      </div>
+    </div>
+    <img src="./assets/WOTM logo.webp" alt="What's On The Menu Catering" class="contact__logo">
+    <p class="contact__footer">&copy; 2026 What's On The Menu Catering. All rights reserved.</p>
+  </div>
+</section>
+
+<!-- ======================== -->
+<!-- POWERED BY FOOTER        -->
+<!-- ======================== -->
+<footer class="powered-by">
+  <p class="powered-by__text">Powered by <a href="https://project-baseline.com" target="_blank" rel="noopener noreferrer" class="powered-by__link">Project Baseline</a></p>
+</footer>
+
+<!-- ============================== -->
+<!-- JAVASCRIPT                     -->
+<!-- ============================== -->
+<script>
+(function() {
+  'use strict';
+
+  // ========================
+  // NAVIGATION
+  // ========================
+  var nav = document.getElementById('mainNav');
+  var hamburger = document.getElementById('hamburger');
+  var overlay = document.getElementById('navOverlay');
+  var navLinks = document.querySelectorAll('.nav__link');
+  var overlayLinks = document.querySelectorAll('.nav__overlay-link');
+  var sections = document.querySelectorAll('section[id]');
+  var heroHeight = window.innerHeight * 0.5;
+
+  // Show/hide nav on scroll
+  var lastScroll = 0;
+  window.addEventListener('scroll', function() {
+    var currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+    if (currentScroll > heroHeight) {
+      nav.classList.add('visible');
+    } else {
+      nav.classList.remove('visible');
+    }
+    lastScroll = currentScroll;
+    updateActiveLink();
+  }, { passive: true });
+
+  // Active link tracking
+  function updateActiveLink() {
+    var scrollPos = window.pageYOffset + 100;
+    sections.forEach(function(section) {
+      var top = section.offsetTop;
+      var bottom = top + section.offsetHeight;
+      var id = section.getAttribute('id');
+      if (scrollPos >= top && scrollPos < bottom) {
+        navLinks.forEach(function(link) {
+          link.classList.remove('active');
+          if (link.getAttribute('href') === '#' + id) {
+            link.classList.add('active');
+          }
+        });
+      }
+    });
+  }
+
+  // Hamburger menu
+  hamburger.addEventListener('click', function() {
+    var isOpen = hamburger.classList.contains('open');
+    hamburger.classList.toggle('open');
+    overlay.classList.toggle('open');
+    hamburger.setAttribute('aria-expanded', !isOpen);
+    document.body.style.overflow = isOpen ? '' : 'hidden';
+  });
+
+  // Close mobile menu on link click
+  overlayLinks.forEach(function(link) {
+    link.addEventListener('click', function() {
+      hamburger.classList.remove('open');
+      overlay.classList.remove('open');
+      hamburger.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
+    });
+  });
+
+  // ========================
+  // SCROLL REVEAL
+  // ========================
+  var revealElements = document.querySelectorAll('.reveal-up, .reveal-left, .reveal-right, .reveal-scale, .reveal-fade');
+
+  if ('IntersectionObserver' in window) {
+    var revealObserver = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.15,
+      rootMargin: '0px 0px -50px 0px'
+    });
+
+    revealElements.forEach(function(el) {
+      revealObserver.observe(el);
+    });
+  } else {
+    // Fallback: show everything
+    revealElements.forEach(function(el) {
+      el.classList.add('active');
+    });
+  }
+
+  // ========================
+  // COUNTER ANIMATION
+  // ========================
+  var counters = document.querySelectorAll('.counter');
+  var countersAnimated = false;
+
+  function animateCounter(element, target, duration, decimals) {
+    var start = 0;
+    var startTime = null;
+
+    function update(currentTime) {
+      if (!startTime) startTime = currentTime;
+      var elapsed = currentTime - startTime;
+      var progress = Math.min(elapsed / duration, 1);
+      // Ease-out cubic
+      var eased = 1 - Math.pow(1 - progress, 3);
+      var current = start + (target - start) * eased;
+      element.textContent = current.toFixed(decimals);
+      if (progress < 1) {
+        requestAnimationFrame(update);
+      }
+    }
+    requestAnimationFrame(update);
+  }
+
+  if ('IntersectionObserver' in window) {
+    var numbersSection = document.getElementById('numbers');
+    var counterObserver = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting && !countersAnimated) {
+          countersAnimated = true;
+          // Slight delay to let the fade-in animation start
+          setTimeout(function() {
+            counters.forEach(function(counter) {
+              var target = parseFloat(counter.getAttribute('data-target'));
+              var decimals = parseInt(counter.getAttribute('data-decimals'), 10) || 0;
+              animateCounter(counter, target, 2000, decimals);
+            });
+          }, 500);
+          counterObserver.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.3
+    });
+
+    if (numbersSection) {
+      counterObserver.observe(numbersSection);
+    }
+  } else {
+    // Fallback: show final values
+    counters.forEach(function(counter) {
+      var target = parseFloat(counter.getAttribute('data-target'));
+      var decimals = parseInt(counter.getAttribute('data-decimals'), 10) || 0;
+      counter.textContent = target.toFixed(decimals);
+    });
+  }
+
+  // ========================
+  // FILMSTRIP DRAG SCROLL
+  // ========================
+  var filmstrip = document.getElementById('filmstrip');
+  if (filmstrip) {
+    var isDown = false;
+    var startX;
+    var scrollLeft;
+
+    filmstrip.addEventListener('mousedown', function(e) {
+      isDown = true;
+      filmstrip.style.cursor = 'grabbing';
+      startX = e.pageX - filmstrip.offsetLeft;
+      scrollLeft = filmstrip.scrollLeft;
+    });
+
+    filmstrip.addEventListener('mouseleave', function() {
+      isDown = false;
+      filmstrip.style.cursor = 'grab';
+    });
+
+    filmstrip.addEventListener('mouseup', function() {
+      isDown = false;
+      filmstrip.style.cursor = 'grab';
+    });
+
+    filmstrip.addEventListener('mousemove', function(e) {
+      if (!isDown) return;
+      e.preventDefault();
+      var x = e.pageX - filmstrip.offsetLeft;
+      var walk = (x - startX) * 2;
+      filmstrip.scrollLeft = scrollLeft - walk;
+    });
+  }
+
+  // ========================
+  // SMOOTH SCROLL FOR NAV LINKS
+  // ========================
+  document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
+    anchor.addEventListener('click', function(e) {
+      e.preventDefault();
+      var targetId = this.getAttribute('href');
+      var targetEl = document.querySelector(targetId);
+      if (targetEl) {
+        var offset = 70; // nav height + buffer
+        var top = targetEl.getBoundingClientRect().top + window.pageYOffset - offset;
+        window.scrollTo({ top: top, behavior: 'smooth' });
+      }
+    });
+  });
+
+  // ========================
+  // STORY READ MORE / LESS
+  // ========================
+  var storyToggle = document.getElementById('storyToggle');
+  var storyExpand = document.getElementById('storyExpand');
+
+  if (storyToggle && storyExpand) {
+    storyToggle.addEventListener('click', function() {
+      var isExpanded = storyExpand.classList.contains('expanded');
+      storyExpand.classList.toggle('expanded');
+      storyToggle.classList.toggle('expanded');
+      storyToggle.querySelector('span').textContent = isExpanded ? 'Read More' : 'Read Less';
+      storyToggle.setAttribute('aria-expanded', !isExpanded);
+    });
+  }
+
+  // ========================
+  // VIDEO LIGHTBOX
+  // ========================
+  var lightbox = document.getElementById('videoLightbox');
+  var lightboxVideo = document.getElementById('lightboxVideo');
+  var lightboxClose = document.getElementById('lightboxClose');
+  var angelTrigger = document.getElementById('angelReeseTrigger');
+
+  function openLightbox() {
+    lightbox.classList.add('active');
+    lightbox.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+    lightboxVideo.play();
+  }
+
+  function closeLightbox() {
+    lightbox.classList.remove('active');
+    lightbox.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+    lightboxVideo.pause();
+    lightboxVideo.currentTime = 0;
+  }
+
+  if (angelTrigger) {
+    angelTrigger.addEventListener('click', openLightbox);
+    angelTrigger.addEventListener('keydown', function(e) {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        openLightbox();
+      }
+    });
+  }
+
+  if (lightboxClose) {
+    lightboxClose.addEventListener('click', closeLightbox);
+  }
+
+  if (lightbox) {
+    lightbox.addEventListener('click', function(e) {
+      if (e.target === lightbox) {
+        closeLightbox();
+      }
+    });
+  }
+
+  // Close lightbox on Escape
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && lightbox && lightbox.classList.contains('active')) {
+      closeLightbox();
+    }
+  });
+
+  // ========================
+  // CLIENTELE ACCORDION (MOBILE)
+  // ========================
+  var accordionHeaders = document.querySelectorAll('.clientele__accordion-header');
+  accordionHeaders.forEach(function(header) {
+    header.addEventListener('click', function() {
+      var targetId = this.getAttribute('aria-controls');
+      var body = document.getElementById(targetId);
+      var isExpanded = this.classList.contains('expanded');
+
+      // Toggle this accordion
+      this.classList.toggle('expanded');
+      body.classList.toggle('expanded');
+      this.setAttribute('aria-expanded', !isExpanded);
+    });
+  });
+
+  // ========================
+  // FILMSTRIP VIDEO AUTOPLAY ON SCROLL
+  // ========================
+  var filmstripVideos = document.querySelectorAll('.press__filmstrip-item--video video');
+  if ('IntersectionObserver' in window && filmstripVideos.length > 0) {
+    var videoObserver = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          entry.target.play();
+        } else {
+          entry.target.pause();
+        }
+      });
+    }, {
+      threshold: 0.5
+    });
+
+    filmstripVideos.forEach(function(video) {
+      videoObserver.observe(video);
+    });
+  }
+
+})();
+</script>
+</body>
+</html>
