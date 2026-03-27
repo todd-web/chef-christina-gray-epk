@@ -835,7 +835,8 @@ button { border: none; cursor: pointer; background: none; font-family: inherit; 
   gap: var(--space-3xl);
   width: max-content;
   animation: marqueeScroll 25s linear infinite;
-  will-change: transform;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
 }
 
 /* CHANGE #5: Brand logo images + text fallbacks */
@@ -1100,7 +1101,8 @@ button { border: none; cursor: pointer; background: none; font-family: inherit; 
   gap: var(--space-md);
   width: max-content;
   animation: galleryScroll 40s linear infinite;
-  will-change: transform;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
 }
 /* Pause on hover - desktop only, touch handled by JS */
 @media (hover: hover) {
@@ -1251,7 +1253,8 @@ button { border: none; cursor: pointer; background: none; font-family: inherit; 
   padding: 0 var(--space-md);
   width: max-content;
   animation: filmstripScroll 55s linear infinite;
-  will-change: transform;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
 }
 /* Pause on hover - desktop only, touch handled by JS */
 @media (hover: hover) {
@@ -1774,53 +1777,53 @@ button { border: none; cursor: pointer; background: none; font-family: inherit; 
   <div class="gallery reveal-fade" style="transition-delay:0.2s">
     <div class="gallery__track" id="galleryTrack">
       <div class="gallery__item" data-dish="Smoked Salmon Blinis with Caviar">
-        <img src="./assets/Photo Sep 27 2025, 6 22 35 PM.jpg" alt="Smoked salmon blinis topped with caviar, a luxury appetizer" loading="lazy">
+        <img src="./assets/Photo Sep 27 2025, 6 22 35 PM.jpg" alt="Smoked salmon blinis topped with caviar, a luxury appetizer" loading="eager">
       </div>
       <div class="gallery__item" data-dish="Tostones with Pulled Pork">
-        <img src="./assets/Photo Nov 11 2025, 8 15 10 PM.jpg" alt="Artisan tostones with pulled pork on rustic wood board" loading="lazy">
+        <img src="./assets/Photo Nov 11 2025, 8 15 10 PM.jpg" alt="Artisan tostones with pulled pork on rustic wood board" loading="eager">
       </div>
       <div class="gallery__item" data-dish="Fine Dining Plated Dishes">
-        <img src="./assets/Photo Aug 23 2025, 7 50 29 PM.jpg" alt="Beautifully plated fine dining dishes" loading="lazy">
+        <img src="./assets/Photo Aug 23 2025, 7 50 29 PM.jpg" alt="Beautifully plated fine dining dishes" loading="eager">
       </div>
       <div class="gallery__item" data-dish="Colorful Slaw Cups with Dragon Fruit">
-        <img src="./assets/Photo Nov 11 2025, 8 15 14 PM.jpg" alt="Vibrant slaw cups with fresh dragon fruit garnish" loading="lazy">
+        <img src="./assets/Photo Nov 11 2025, 8 15 14 PM.jpg" alt="Vibrant slaw cups with fresh dragon fruit garnish" loading="eager">
       </div>
       <div class="gallery__item" data-dish="Artisan Appetizers on Wooden Boards">
-        <img src="./assets/Photo Aug 23 2025, 7 02 57 PM.jpg" alt="Artisan appetizers beautifully arranged on wooden boards" loading="lazy">
+        <img src="./assets/Photo Aug 23 2025, 7 02 57 PM.jpg" alt="Artisan appetizers beautifully arranged on wooden boards" loading="eager">
       </div>
       <div class="gallery__item" data-dish="Grain Dish with Roasted Carrots">
-        <img src="./assets/Photo Aug 23 2025, 8 08 42 PM.jpg" alt="Hearty grain dish topped with roasted carrots" loading="lazy">
+        <img src="./assets/Photo Aug 23 2025, 8 08 42 PM.jpg" alt="Hearty grain dish topped with roasted carrots" loading="eager">
       </div>
       <div class="gallery__item" data-dish="Brussels Sprouts">
-        <img src="./assets/Photo Aug 23 2025, 8 33 21 PM.jpg" alt="Roasted brussels sprouts in a black bowl" loading="lazy">
+        <img src="./assets/Photo Aug 23 2025, 8 33 21 PM.jpg" alt="Roasted brussels sprouts in a black bowl" loading="eager">
       </div>
       <div class="gallery__item" data-dish="Fried Chicken Catering Setup">
-        <img src="./assets/Photo Mar 26 2026, 5 27 44 PM.jpg" alt="Fried chicken and wings catering setup" loading="lazy">
+        <img src="./assets/Photo Mar 26 2026, 5 27 44 PM.jpg" alt="Fried chicken and wings catering setup" loading="eager">
       </div>
       <!-- Duplicate set for seamless loop -->
       <div class="gallery__item" data-dish="Smoked Salmon Blinis with Caviar">
-        <img src="./assets/Photo Sep 27 2025, 6 22 35 PM.jpg" alt="Smoked salmon blinis topped with caviar, a luxury appetizer" loading="lazy">
+        <img src="./assets/Photo Sep 27 2025, 6 22 35 PM.jpg" alt="Smoked salmon blinis topped with caviar, a luxury appetizer" loading="eager">
       </div>
       <div class="gallery__item" data-dish="Tostones with Pulled Pork">
-        <img src="./assets/Photo Nov 11 2025, 8 15 10 PM.jpg" alt="Artisan tostones with pulled pork on rustic wood board" loading="lazy">
+        <img src="./assets/Photo Nov 11 2025, 8 15 10 PM.jpg" alt="Artisan tostones with pulled pork on rustic wood board" loading="eager">
       </div>
       <div class="gallery__item" data-dish="Fine Dining Plated Dishes">
-        <img src="./assets/Photo Aug 23 2025, 7 50 29 PM.jpg" alt="Beautifully plated fine dining dishes" loading="lazy">
+        <img src="./assets/Photo Aug 23 2025, 7 50 29 PM.jpg" alt="Beautifully plated fine dining dishes" loading="eager">
       </div>
       <div class="gallery__item" data-dish="Colorful Slaw Cups with Dragon Fruit">
-        <img src="./assets/Photo Nov 11 2025, 8 15 14 PM.jpg" alt="Vibrant slaw cups with fresh dragon fruit garnish" loading="lazy">
+        <img src="./assets/Photo Nov 11 2025, 8 15 14 PM.jpg" alt="Vibrant slaw cups with fresh dragon fruit garnish" loading="eager">
       </div>
       <div class="gallery__item" data-dish="Artisan Appetizers on Wooden Boards">
-        <img src="./assets/Photo Aug 23 2025, 7 02 57 PM.jpg" alt="Artisan appetizers beautifully arranged on wooden boards" loading="lazy">
+        <img src="./assets/Photo Aug 23 2025, 7 02 57 PM.jpg" alt="Artisan appetizers beautifully arranged on wooden boards" loading="eager">
       </div>
       <div class="gallery__item" data-dish="Grain Dish with Roasted Carrots">
-        <img src="./assets/Photo Aug 23 2025, 8 08 42 PM.jpg" alt="Hearty grain dish topped with roasted carrots" loading="lazy">
+        <img src="./assets/Photo Aug 23 2025, 8 08 42 PM.jpg" alt="Hearty grain dish topped with roasted carrots" loading="eager">
       </div>
       <div class="gallery__item" data-dish="Brussels Sprouts">
-        <img src="./assets/Photo Aug 23 2025, 8 33 21 PM.jpg" alt="Roasted brussels sprouts in a black bowl" loading="lazy">
+        <img src="./assets/Photo Aug 23 2025, 8 33 21 PM.jpg" alt="Roasted brussels sprouts in a black bowl" loading="eager">
       </div>
       <div class="gallery__item" data-dish="Fried Chicken Catering Setup">
-        <img src="./assets/Photo Mar 26 2026, 5 27 44 PM.jpg" alt="Fried chicken and wings catering setup" loading="lazy">
+        <img src="./assets/Photo Mar 26 2026, 5 27 44 PM.jpg" alt="Fried chicken and wings catering setup" loading="eager">
       </div>
     </div>
   </div>
@@ -1879,10 +1882,10 @@ button { border: none; cursor: pointer; background: none; font-family: inherit; 
   <div class="press__filmstrip-wrap reveal-right" style="transition-delay:0.2s">
     <div class="press__filmstrip" id="filmstrip">
       <div class="press__filmstrip-item">
-        <img src="./assets/Photo Nov 15 2025, 1 37 17 PM.jpg" alt="Professional video shoot setup with Chef Christina Gray" loading="lazy">
+        <img src="./assets/Photo Nov 15 2025, 1 37 17 PM.jpg" alt="Professional video shoot setup with Chef Christina Gray" loading="eager">
       </div>
       <div class="press__filmstrip-item">
-        <img src="./assets/Photo Nov 15 2025, 3 10 21 PM.jpg" alt="Cameraman filming Chef Christina Gray in the kitchen" loading="lazy">
+        <img src="./assets/Photo Nov 15 2025, 3 10 21 PM.jpg" alt="Cameraman filming Chef Christina Gray in the kitchen" loading="eager">
       </div>
       <div class="press__filmstrip-item press__filmstrip-item--video">
         <video muted playsinline preload="metadata" loop>
@@ -1891,7 +1894,7 @@ button { border: none; cursor: pointer; background: none; font-family: inherit; 
         </video>
       </div>
       <div class="press__filmstrip-item">
-        <img src="./assets/Photo Nov 15 2025, 3 14 40 PM.jpg" alt="Chef Christina Gray using blender while being filmed" loading="lazy">
+        <img src="./assets/Photo Nov 15 2025, 3 14 40 PM.jpg" alt="Chef Christina Gray using blender while being filmed" loading="eager">
       </div>
       <div class="press__filmstrip-item press__filmstrip-item--video">
         <video muted playsinline preload="metadata" loop>
@@ -1900,17 +1903,17 @@ button { border: none; cursor: pointer; background: none; font-family: inherit; 
         </video>
       </div>
       <div class="press__filmstrip-item">
-        <img src="./assets/Photo Nov 15 2025, 3 31 36 PM.jpg" alt="Overhead kitchen shoot with Chef Christina Gray" loading="lazy">
+        <img src="./assets/Photo Nov 15 2025, 3 31 36 PM.jpg" alt="Overhead kitchen shoot with Chef Christina Gray" loading="eager">
       </div>
       <div class="press__filmstrip-item">
-        <img src="./assets/Chef Tina.webp" alt="Chef Christina Gray in her kitchen" loading="lazy">
+        <img src="./assets/Chef Tina.webp" alt="Chef Christina Gray in her kitchen" loading="eager">
       </div>
       <!-- Duplicate set for seamless loop -->
       <div class="press__filmstrip-item">
-        <img src="./assets/Photo Nov 15 2025, 1 37 17 PM.jpg" alt="Professional video shoot setup" loading="lazy">
+        <img src="./assets/Photo Nov 15 2025, 1 37 17 PM.jpg" alt="Professional video shoot setup" loading="eager">
       </div>
       <div class="press__filmstrip-item">
-        <img src="./assets/Photo Nov 15 2025, 3 10 21 PM.jpg" alt="Cameraman filming Chef Christina Gray" loading="lazy">
+        <img src="./assets/Photo Nov 15 2025, 3 10 21 PM.jpg" alt="Cameraman filming Chef Christina Gray" loading="eager">
       </div>
       <div class="press__filmstrip-item press__filmstrip-item--video">
         <video muted playsinline preload="metadata" loop autoplay>
@@ -1919,7 +1922,7 @@ button { border: none; cursor: pointer; background: none; font-family: inherit; 
         </video>
       </div>
       <div class="press__filmstrip-item">
-        <img src="./assets/Photo Nov 15 2025, 3 14 40 PM.jpg" alt="Chef Christina Gray using blender" loading="lazy">
+        <img src="./assets/Photo Nov 15 2025, 3 14 40 PM.jpg" alt="Chef Christina Gray using blender" loading="eager">
       </div>
       <div class="press__filmstrip-item press__filmstrip-item--video">
         <video muted playsinline preload="metadata" loop autoplay>
@@ -1928,10 +1931,10 @@ button { border: none; cursor: pointer; background: none; font-family: inherit; 
         </video>
       </div>
       <div class="press__filmstrip-item">
-        <img src="./assets/Photo Nov 15 2025, 3 31 36 PM.jpg" alt="Overhead kitchen shoot" loading="lazy">
+        <img src="./assets/Photo Nov 15 2025, 3 31 36 PM.jpg" alt="Overhead kitchen shoot" loading="eager">
       </div>
       <div class="press__filmstrip-item">
-        <img src="./assets/Chef Tina.webp" alt="Chef Christina Gray in her kitchen" loading="lazy">
+        <img src="./assets/Chef Tina.webp" alt="Chef Christina Gray in her kitchen" loading="eager">
       </div>
     </div>
   </div>
