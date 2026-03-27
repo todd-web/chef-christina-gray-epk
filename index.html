@@ -835,6 +835,7 @@ button { border: none; cursor: pointer; background: none; font-family: inherit; 
   gap: var(--space-3xl);
   width: max-content;
   animation: marqueeScroll 25s linear infinite;
+  will-change: transform;
 }
 
 /* CHANGE #5: Brand logo images + text fallbacks */
@@ -1099,9 +1100,13 @@ button { border: none; cursor: pointer; background: none; font-family: inherit; 
   gap: var(--space-md);
   width: max-content;
   animation: galleryScroll 40s linear infinite;
+  will-change: transform;
 }
-.gallery__track:hover {
-  animation-play-state: paused;
+/* Pause on hover - desktop only, touch handled by JS */
+@media (hover: hover) {
+  .gallery__track:hover {
+    animation-play-state: paused;
+  }
 }
 .gallery__item {
   flex-shrink: 0;
@@ -1144,9 +1149,6 @@ button { border: none; cursor: pointer; background: none; font-family: inherit; 
   .gallery__item::after { opacity: 1; }
   .gallery__track {
     animation-duration: 30s;
-    /* Allow manual swipe on mobile */
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
   }
 }
 
@@ -1248,9 +1250,19 @@ button { border: none; cursor: pointer; background: none; font-family: inherit; 
   gap: var(--space-md);
   padding: 0 var(--space-md);
   width: max-content;
-  animation: filmstripScroll 35s linear infinite;
+  animation: filmstripScroll 55s linear infinite;
+  will-change: transform;
 }
-.press__filmstrip:hover {
+/* Pause on hover - desktop only, touch handled by JS */
+@media (hover: hover) {
+  .press__filmstrip:hover {
+    animation-play-state: paused;
+  }
+}
+.press__filmstrip.touch-paused {
+  animation-play-state: paused;
+}
+.gallery__track.touch-paused {
   animation-play-state: paused;
 }
 @keyframes filmstripScroll {
@@ -1979,17 +1991,24 @@ button { border: none; cursor: pointer; background: none; font-family: inherit; 
   var sections = document.querySelectorAll('section[id]');
   var heroHeight = window.innerHeight * 0.5;
 
-  // Show/hide nav on scroll
+  // Show/hide nav on scroll (throttled for mobile performance)
   var lastScroll = 0;
+  var scrollTicking = false;
   window.addEventListener('scroll', function() {
-    var currentScroll = window.pageYOffset || document.documentElement.scrollTop;
-    if (currentScroll > heroHeight) {
-      nav.classList.add('visible');
-    } else {
-      nav.classList.remove('visible');
+    if (!scrollTicking) {
+      requestAnimationFrame(function() {
+        var currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+        if (currentScroll > heroHeight) {
+          nav.classList.add('visible');
+        } else {
+          nav.classList.remove('visible');
+        }
+        lastScroll = currentScroll;
+        updateActiveLink();
+        scrollTicking = false;
+      });
+      scrollTicking = true;
     }
-    lastScroll = currentScroll;
-    updateActiveLink();
   }, { passive: true });
 
   // Active link tracking
@@ -2250,6 +2269,31 @@ button { border: none; cursor: pointer; background: none; font-family: inherit; 
       this.setAttribute('aria-expanded', !isExpanded);
     });
   });
+
+  // ========================
+  // TOUCH PAUSE/RESUME FOR SCROLLING ELEMENTS (MOBILE)
+  // ========================
+  function setupTouchPause(selector) {
+    var el = document.querySelector(selector);
+    if (!el) return;
+    var resumeTimer = null;
+
+    el.addEventListener('touchstart', function() {
+      el.classList.add('touch-paused');
+      if (resumeTimer) clearTimeout(resumeTimer);
+    }, { passive: true });
+
+    el.addEventListener('touchend', function() {
+      if (resumeTimer) clearTimeout(resumeTimer);
+      resumeTimer = setTimeout(function() {
+        el.classList.remove('touch-paused');
+      }, 2000);
+    }, { passive: true });
+  }
+
+  setupTouchPause('.gallery__track');
+  setupTouchPause('.press__filmstrip');
+  setupTouchPause('.marquee__track');
 
   // ========================
   // FILMSTRIP VIDEO AUTOPLAY ON SCROLL
